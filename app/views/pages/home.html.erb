@@ -6,7 +6,7 @@
       <%= image_tag("logo.png", class: "rounded-circle") %> CARCNC
       <% end %>
 
-    <div class="btn_container">
+    <div class="home_btn_container">
     <%= form_tag '/cars', method: :get, class: 'my_class' do %>
       <%= text_field_tag 'location', nil, placeholder: 'Location', class: 'location_btn ' %> 
       <%= date_field_tag "start_date", "date_input_name", class: 'first_date_btn' %>
@@ -20,24 +20,19 @@
   
  
 <select name="cars" class="dropdown-field">
-  
-  <option value="volvo" ></option>
-  <option value="saab">My profile</option>
-  <option value="opel">Messages</option>
-  <option value="audi">Notifications</option>
-  <option value="volvo">Saved cars</option>
-  <option value="saab">Add a new offer</option>
-  <option value="opel">Share my experience</option>
-  <option value="audi">Help</option>
-  <option value="audi">Log out</option>
-  </select>
-  <div class="pullmenu-icon"></div>
 
+  </select>
+
+<%= link_to new_car_path, class: "home-button" do %>
+
+    <%= image_tag("plus.png", class: "plus") %> 
+    <% end %>
 <%= image_tag("avatar.png", class: "avatar") %>
 
-
+    <div class="home-card">    </div>
     <h1 id="welcome">Welcome on CarCNC</h1>
     <p id="ready">Ready for a ride ?</p>
+
     
 <!-- Optional JavaScript for bootstrap -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
