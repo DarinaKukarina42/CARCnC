@@ -1,13 +1,13 @@
 
   html, body {
 
-    background-image: url("wall.jpg");
+    background-image: image_url("wall.jpg");
     background-size: cover;
     width: 1500px;
     background-repeat: no-repeat;
   }
 
-  nav { background-image: url("green.jpg");
+  nav { background-image: image_url("green.jpg");
     background-size: cover;
     height: 140px;
     width: 1515px;
@@ -381,7 +381,7 @@ position: absolute;
   font-size: 45px;
   color: white;
   left: 460px;
-  background-image: url("black.jpg");
+  background-image: image_url("black.jpg");
 
   width: 500px;
   height: 150px;
