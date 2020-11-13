@@ -1,30 +1,23 @@
 
   html, body {
-    width: 100%;
-    height: 100%;
-  
-  }
 
-  nav { background-image: url("Car.jpg");
+    background-image: url("wall.jpg");
     background-size: cover;
-    height: 130px;
     width: 1500px;
+    background-repeat: no-repeat;
+  }
+
+  nav { background-image: url("green.jpg");
+    background-size: cover;
+    height: 140px;
+    width: 1515px;
     margin-top: -15px;
+    border-bottom: solid #6F7A7D 3px;
   }
 
-  .bg-img { background-image: url("Car.jpg");
-    position: relative;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  margin-top: -15px;
-  
-
-  }
  
   .search-form-control .btn {
-    
-    
+
     height: 32px;
     right: 8px;
     margin-bottom: 0rem;
@@ -119,12 +112,12 @@ html, body, div, span {
 
 
 a {
-    color: #2c2b2b;
+    color: black;
     text-decoration: none;
     transition: color 0.3s ease-out 0s;
 }
 a:hover {
-    color: #ffffff;
+    color: black;
 }
 
 
@@ -154,21 +147,21 @@ a:hover {
 
 
 .rounded-circle {
-position: fixed;
+position: absolute;
 width: 119px;
 height: 119px;
-left: 0px;
-top: 3px;
+left: -120px;
+top: -50px;
 
 }
 
 
 .home-button {
-position: fixed;
+position: absolute;
 width: 155px;
 height: 38px;
 left: 124px;
-top: 50px;
+top: 70px;
 
 font-family: Aclonica;
 font-style: normal;
@@ -176,7 +169,7 @@ font-weight: normal;
 font-size: 30px;
 line-height: 34px;
 
-color: #000000;
+color: #FFFFFF;
 
 
 }
@@ -202,18 +195,18 @@ color: #000000;
 width: 40px;
 height: 40px;
 left: 1380px;
-top: 30px;
-position: fixed;
+top: 60px;
+position: absolute;
 }
 
 .dropdown-field {
 
         background-color: white;
-        top:20px;
+        top:50px;
         height:60px;
         width: 110px;
         left: 1320px;
-        position:fixed;
+        position: absolute;
        
 }
 
@@ -251,14 +244,12 @@ position: fixed;
         border-radius: 50px;
     }
 
-    .pullmenu-icon {
-        width: 25px;
-        height: 3px;
-        background:  grey;
-        position: fixed;
-        left: 1340px;
-        top: 40px;
-        transition: opacity .0s ease-in-out;
+    .plus {
+        position: absolute;
+        left: 1210px;
+        top: -10px;
+        width: 40px;
+        height: 40px;
     
     
     &:after {
@@ -283,16 +274,16 @@ position: fixed;
     }
 
     #new_booking {
-        display: flex;
+        display: block;
     }
 
 
     .btn_container {
-        position: sticky;
+        position: absolute;
         width: 650px;
         height: 65px;
         left: 400px;
-        top: 80px;
+        top: 50px;
         
         background: #FFFFFF;
         border-radius: 50px;
@@ -301,10 +292,25 @@ position: fixed;
 
     }
 
+
+    .home_btn_container {
+      position: absolute;
+      width: 650px;
+      height: 65px;
+      left: 400px;
+      top: 300px;
+      
+      background: #FFFFFF;
+      border-radius: 50px;
+     border: 1px solid grey;
+     padding: 0px;
+
+  }
+
     .submit {
         width: 40px;
         height: 40px;
-        background: #34BECD;
+        background: #4b86a6;
         margin-top: 0px;
         margin-left: 20px;
         position: sticky;
@@ -365,27 +371,35 @@ position: fixed;
 
    }
 
+
 #welcome{
-  top: 300px;
-  position: fixed;
+  top: 100px;
+  position: absolute;
+  font-family: Abyssinica SIL;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  color: white;
+  left: 460px;
+  background-image: url("black.jpg");
+
+  width: 500px;
+  height: 150px;
+  padding-top: 20px;
+  border-radius: 20px;
+  border: solid #064c5b 1px;
+}
+
+
+#ready{
+  top: 180px;
+  position: absolute;
   font-family: Abyssinica SIL;
   font-style: normal;
   font-weight: normal;
   font-size: 35px;
   color: white;
-  left: 50px;
-}
-
-
-#ready{
-  top: 340px;
-  position: fixed;
-  font-family: Abyssinica SIL;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  color: white;
-  left: 75px;
+  left: 560px;
 }
 
 
@@ -403,4 +417,17 @@ position: fixed;
   line-height: 34px;
   
   color: #000000;
+}
+
+.new-row {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  width: 500px;
+  height: 550px;
+  background: white;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }

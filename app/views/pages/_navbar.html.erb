@@ -7,7 +7,7 @@
     <% end %>
 
   <div class="btn_container">
-  <%= form_tag '/cars', method: :get, class: 'my_class' do %>
+  <%= form_tag '/cars', method: :get, class: 'search-bar' do %>
     <%= text_field_tag 'location', nil, placeholder: 'Location', class: 'location_btn ' %> 
     <%= date_field_tag "start_date", "date_input_name", class: 'first_date_btn' %>
     <%= date_field_tag "end_date", "date_input_name", class: 'last_date_btn' %>
@@ -17,22 +17,14 @@
 </div>
 
 
-
-
 <select name="cars" class="dropdown-field">
 
-<option value="volvo" ></option>
-<option value="saab">My profile</option>
-<option value="opel">Messages</option>
-<option value="audi">Notifications</option>
-<option value="volvo">Saved cars</option>
-<option value="saab">Add a new offer</option>
-<option value="opel">Share my experience</option>
-<option value="audi">Help</option>
-<option value="audi">Log out</option>
-</select>
-<div class="pullmenu-icon"></div>
+  </select>
 
+<%= link_to new_car_path, class: "home-button" do %>
+
+    <%= image_tag("plus.png", class: "plus") %> 
+    <% end %>
 <%= image_tag("avatar.png", class: "avatar") %>
 
 
